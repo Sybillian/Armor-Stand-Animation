@@ -1,0 +1,73 @@
+# anim_attack
+>{"type":"repeating-chain","conditional":false,"auto":true}
+ /scoreboard players add @e[type=armor_stand,score_anim=3,score_anim_min=3] frame 1
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=1,score_frame_min=1] {Pose:{RightArm:[261f,18f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=2,score_frame_min=2] {Pose:{RightArm:[269f,14f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=3,score_frame_min=3] {Pose:{RightArm:[277f,10f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=4,score_frame_min=4] {Pose:{RightArm:[285f,6f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=5,score_frame_min=5] {Pose:{RightArm:[293f,2f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=6,score_frame_min=6] {Pose:{RightArm:[301f,0f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=7,score_frame_min=7] {Pose:{RightArm:[309f,0f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=8,score_frame_min=8] {Pose:{RightArm:[317f,0f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=9,score_frame_min=9] {Pose:{RightArm:[325f,0f,0f]}}
+ /entitydata @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame=10,score_frame_min=10] {Pose:{RightArm:[333f,0f,0f]}}
+ /scoreboard players set @e[type=armor_stand,score_anim=3,score_anim_min=3,score_frame_min=11] anim 2
+>{"conditional":true}
+ /scoreboard players set @e[type=armor_stand,score_anim=2,score_anim_min=2,score_frame_min=11,score_frame=11] frame 62
+
+# anim_attack_swipe
+>{"type":"repeating-chain","conditional":false,"auto":true}
+ /scoreboard players add @e[type=armor_stand,score_anim=4,score_anim_min=4] frame 1
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=1,score_frame_min=1] {Pose:{RightArm:[332f,0f,8f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=2,score_frame_min=2] {Pose:{RightArm:[326f,0f,16f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=3,score_frame_min=3] {Pose:{RightArm:[318f,0f,24f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=4,score_frame_min=4] {Pose:{RightArm:[310f,0f,32f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=5,score_frame_min=5] {Pose:{RightArm:[302f,0f,40f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=6,score_frame_min=6] {Pose:{RightArm:[296f,0f,48f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=7,score_frame_min=7] {Pose:{RightArm:[288f,0f,56f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=8,score_frame_min=8] {Pose:{RightArm:[280f,0f,64f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=9,score_frame_min=9] {Pose:{RightArm:[272f,0f,65f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=10,score_frame_min=10] {Pose:{RightArm:[269f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=11,score_frame_min=11] {Pose:{RightArm:[277f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=12,score_frame_min=12] {Pose:{RightArm:[285f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=13,score_frame_min=13] {Pose:{RightArm:[293f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=14,score_frame_min=14] {Pose:{RightArm:[301f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=15,score_frame_min=15] {Pose:{RightArm:[309f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=16,score_frame_min=16] {Pose:{RightArm:[317f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=17,score_frame_min=17] {Pose:{RightArm:[325f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=18,score_frame_min=18] {Pose:{RightArm:[333f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=19,score_frame_min=19] {Pose:{RightArm:[341f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=20,score_frame_min=20] {Pose:{RightArm:[349f,0f,66f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=21,score_frame_min=21] {Pose:{RightArm:[341f,0f,56f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=22,score_frame_min=22] {Pose:{RightArm:[333f,0f,48f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=23,score_frame_min=23] {Pose:{RightArm:[333f,0f,40f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=24,score_frame_min=24] {Pose:{RightArm:[333f,0f,32f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=25,score_frame_min=25] {Pose:{RightArm:[333f,0f,24f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=26,score_frame_min=26] {Pose:{RightArm:[333f,0f,16f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=27,score_frame_min=27] {Pose:{RightArm:[333f,0f,8f]}}
+ /entitydata @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame=28,score_frame_min=28] {Pose:{RightArm:[333f,0f,0f]}}
+ /scoreboard players set @e[type=armor_stand,score_anim=4,score_anim_min=4,score_frame_min=29] anim 2
+>{"conditional":true}
+ /scoreboard players set @e[type=armor_stand,score_anim=2,score_anim_min=2,score_frame_min=29,score_frame=29] frame 62
+
+# anim_block
+>{"type":"repeating-chain","conditional":false,"auto":true}
+ /scoreboard players add @e[type=armor_stand,score_anim=5,score_anim_min=5] frame 1
+ /execute @e[type=armor_stand,score_anim=5,score_anim_min=5] ~ ~ ~ effect @e[type=zombie,r=1] minecraft:resistance 1 4 true
+ /execute @e[type=armor_stand,score_anim=5,score_anim_min=5] ~ ~ ~ effect @e[type=zombie,r=1] minecraft:slowness 1 2 true
+ /execute @e[type=armor_stand,score_anim=5,score_anim_min=5] ~ ~ ~
+ 	scoreboard players tag @e[type=zombie,r=1] add blocking
+ /entitydata @e[type=armor_stand,score_anim=5,score_anim_min=5,score_frame=80,score_frame_min=1,tag=mobTop] {Pose:{LeftArm:[303f,60f,350f]}}
+ /execute @e[type=armor_stand,score_anim=5,score_anim_min=5,score_frame_min=80] ~ ~ ~
+ 	scoreboard players set @e[type=zombie,r=1] resetDMG 119
+ /execute @e[type=armor_stand,score_anim=5,score_anim_min=5,score_frame_min=80] ~ ~ ~
+ 	scoreboard players tag @e[type=zombie,r=1] remove blocking
+ /scoreboard players set @e[type=armor_stand,score_anim=5,score_anim_min=5,score_frame_min=80] anim 2
+>{"conditional":true}
+ /scoreboard players set @e[type=armor_stand,score_anim=2,score_anim_min=2,score_frame_min=81,score_frame=81] frame 62
+
+# anim_death
+>{"type":"repeating-chain","conditional":false,"auto":true}
+ /scoreboard players add @e[type=armor_stand,score_anim=20,score_anim_min=20] frame 1
+ /entitydata @e[type=armor_stand,score_anim=20,score_anim_min=20,score_frame_min=1] {Pose:{Head:[22f,0f,0f],LeftLeg:[329f,346f,0f],RightLeg:[329f,37f,0f],LeftArm:[282f,0f,293f],RightArm:[278f,14f,33f]}}
+ /kill @e[type=armor_stand,score_anim=20,score_anim_min=20,score_frame_min=20]

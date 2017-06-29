@@ -1,0 +1,41 @@
+# npc
+>{"type":"repeating-chain","conditional":false,"auto":true}
+ /entitydata @e[score_mobID_min=1] {Air:1s}
+ /entitydata @e[score_mobID_min=1] {Air:0s}
+ /tp @e[type=armor_stand,score_mobID=1,score_mobID_min=1] @e[type=zombie,score_mobID=1,score_mobID_min=1]
+ /execute @e[type=armor_stand,score_mobID=1,score_mobID_min=1,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=1,score_mobID_min=1,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=2,score_mobID_min=2] @e[type=zombie,score_mobID=2,score_mobID_min=2]
+ /execute @e[type=armor_stand,score_mobID=2,score_mobID_min=2,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=2,score_mobID_min=2,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=3,score_mobID_min=3] @e[type=zombie,score_mobID=3,score_mobID_min=3]
+ /execute @e[type=armor_stand,score_mobID=3,score_mobID_min=3,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=3,score_mobID_min=3,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=4,score_mobID_min=4] @e[type=zombie,score_mobID=4,score_mobID_min=4]
+ /execute @e[type=armor_stand,score_mobID=4,score_mobID_min=4,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=4,score_mobID_min=4,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=5,score_mobID_min=5] @e[type=zombie,score_mobID=5,score_mobID_min=5]
+ /execute @e[type=armor_stand,score_mobID=5,score_mobID_min=5,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=5,score_mobID_min=5,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=6,score_mobID_min=6] @e[type=zombie,score_mobID=6,score_mobID_min=6]
+ /execute @e[type=armor_stand,score_mobID=6,score_mobID_min=6,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=6,score_mobID_min=6,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=7,score_mobID_min=7] @e[type=zombie,score_mobID=7,score_mobID_min=7]
+ /execute @e[type=armor_stand,score_mobID=7,score_mobID_min=7,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=7,score_mobID_min=7,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=8,score_mobID_min=8] @e[type=zombie,score_mobID=8,score_mobID_min=8]
+ /execute @e[type=armor_stand,score_mobID=8,score_mobID_min=8,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=8,score_mobID_min=8,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=9,score_mobID_min=9] @e[type=zombie,score_mobID=9,score_mobID_min=9]
+ /execute @e[type=armor_stand,score_mobID=9,score_mobID_min=9,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=9,score_mobID_min=9,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /tp @e[type=armor_stand,score_mobID=10,score_mobID_min=10] @e[type=zombie,score_mobID=10,score_mobID_min=10]
+ /execute @e[type=zombie,score_mobID=10,score_mobID_min=10,tag=mobTop] ~ ~ ~ teleport @e[type=armor_stand,score_mobID=10,score_mobID_min=10,tag=mobBtm,r=0] ~ ~-0.8 ~
+ /execute @a ~ ~ ~
+ 	testfor @e[type=zombie,r=2]
+>{"conditional":true}
+ /scoreboard players set @e[type=armor_stand,score_anim=2,score_anim_min=2] frame 0
+ /scoreboard players set @e[type=armor_stand,score_anim=2,score_anim_min=2] anim 3
+>{"conditional":false}
+ /execute @e[type=zombie] ~ ~ ~
+ 	scoreboard players tag @e[type=armor_stand,r=5,score_mobID_min=1] add alive
+ /scoreboard players set @e[type=armor_stand,tag=!alive,score_mobID_min=1,score_anim=19] frame 0
+ /scoreboard players set @e[type=armor_stand,tag=!alive,score_mobID_min=1] anim 20
+ /scoreboard players tag @e[type=armor_stand,tag=alive,score_mobID_min=1] remove alive
+ /scoreboard players add @e[type=zombie] recentDMG 1 {HurtTime:10s}
+ /scoreboard players add @e[type=zombie,score_recentDMG_min=1] resetDMG 1
+ /execute @e[type=zombie,score_recentDMG_min=3] ~ ~ ~
+ 	scoreboard players set @e[type=armor_stand,r=1] anim 5
+ /scoreboard players set @e[type=zombie,score_resetDMG_min=120,tag=!blocking] recentDMG 0
+ /scoreboard players set @e[type=zombie,score_resetDMG_min=120] resetDMG 0
